@@ -5,15 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcarrete <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/05 16:17:43 by mcarrete          #+#    #+#             */
-/*   Updated: 2019/10/08 10:29:46 by mcarrete         ###   ########.fr       */
+/*   Created: 2019/10/07 10:36:09 by mcarrete          #+#    #+#             */
+/*   Updated: 2019/10/09 11:17:09 by mcarrete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int x, int y);
+/*
+** This is the prototype of function 'ft_putchar'.
+** We need it to call the actual function.
+*/
+
+void 	ft_is_negative(int n);
 
 int		main(void)
 {
-	rush(-8, -3);
-	return (0);
+	ft_is_negative(4);	
+	return(1);
 }

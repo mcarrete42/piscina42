@@ -1,19 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcarrete <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mcarrete <mcarrete@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/05 16:17:43 by mcarrete          #+#    #+#             */
-/*   Updated: 2019/10/08 10:29:46 by mcarrete         ###   ########.fr       */
+/*   Created: 2019/10/09 13:37:00 by mcarrete          #+#    #+#             */
+/*   Updated: 2019/10/09 22:10:17 by mcarrete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int x, int y);
+#include <unistd.h>
 
-int		main(void)
+void	ft_putchar(char a)
 {
-	rush(-8, -3);
-	return (0);
+	write(1, &a, 1);
+}
+
+void	ft_putnbr(int nb)
+{
+	long int n;
+
+	n = nb;
+	if (n < 0)
+	{
+		ft_putchar('-');
+		n = -n;
+	}
+	if (n > 9)
+	{
+		ft_putnbr(n / 10);
+	}
+	ft_putchar(n % 10 + '0');
 }

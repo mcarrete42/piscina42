@@ -1,19 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mcarrete <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mcarrete <mcarrete@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/05 16:17:43 by mcarrete          #+#    #+#             */
-/*   Updated: 2019/10/08 10:29:46 by mcarrete         ###   ########.fr       */
+/*   Created: 2019/10/07 10:28:30 by mcarrete          #+#    #+#             */
+/*   Updated: 2019/10/09 10:50:11 by mcarrete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int x, int y);
+#include <unistd.h>
 
-int		main(void)
+/*
+** This function is used to print 'char c', given in a separate funcion.
+*/
+
+void	ft_putchar(char c)
 {
-	rush(-8, -3);
-	return (0);
+	write(1, &c, 1);
 }

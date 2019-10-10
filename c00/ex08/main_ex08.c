@@ -5,15 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mcarrete <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/05 16:17:43 by mcarrete          #+#    #+#             */
-/*   Updated: 2019/10/08 10:29:46 by mcarrete         ###   ########.fr       */
+/*   Created: 2019/10/07 10:36:09 by mcarrete          #+#    #+#             */
+/*   Updated: 2019/10/09 13:49:32 by mcarrete         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	rush(int x, int y);
+void	ft_print_combn(void);
 
 int		main(void)
 {
-	rush(-8, -3);
-	return (0);
+	ft_print_combn();
+	return (1);
 }
